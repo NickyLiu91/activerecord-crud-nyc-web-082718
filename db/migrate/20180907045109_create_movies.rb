@@ -11,6 +11,7 @@ class CreateMovies < ActiveRecord::Migration[5.2]
 
   def initialize(title)
     @title = title
+    self.save
   end
 
 end
