@@ -9,3 +9,5 @@ class CreateMovies < ActiveRecord::Migration[5.2]
     end
   end
 end
+
+m1 = Movies.create(hash)
