@@ -20,11 +20,8 @@ def can_be_created_with_a_hash_of_attributes
       lead: "Paul Newman",
       in_theaters: false
   }
-  def initialize(attributes)
-    attributes.each {|key, value| self.send(("#{key}="), value)}
-  end
 
-  Movie.new(attributes).save
+  Movie.new(attributes)
 end
 
 def can_be_created_in_a_block(args = __)
