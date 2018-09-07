@@ -9,9 +9,8 @@ class CreateMovies < ActiveRecord::Migration[5.2]
     end
   end
 
-  def initialize(hash)
-    @title = title
-    self.save
+  def initialize(attributes)
+    attributes.each {|key, value| self.send(("#{key}="), value)}
   end
 
 end
