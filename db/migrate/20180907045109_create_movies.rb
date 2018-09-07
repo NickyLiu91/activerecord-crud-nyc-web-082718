@@ -8,4 +8,9 @@ class CreateMovies < ActiveRecord::Migration[5.2]
       t.boolean :in_theaters
     end
   end
+
+  def initialize(title)
+    @title = title
+  end
+
 end
