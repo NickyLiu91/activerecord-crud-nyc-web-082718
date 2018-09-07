@@ -9,8 +9,8 @@ class CreateMovies < ActiveRecord::Migration[5.2]
     end
   end
 
-  def initialize(title)
-    @title = title
+  def initialize(hash)
+
     self.save
   end
 
