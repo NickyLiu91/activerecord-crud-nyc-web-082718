@@ -8,10 +8,4 @@ class CreateMovies < ActiveRecord::Migration[5.2]
       t.boolean :in_theaters
     end
   end
-
-  def initialize(attributes)
-    attributes.each {|key, value| self.send(("#{key}="), value)}
-    self.save
-  end
-
 end
